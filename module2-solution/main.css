@@ -1,0 +1,108 @@
+body {
+    background-color: #393939;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    font-family: "Times New Roman", Arial, serif;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.model-col1, .model-col2, .model-col3{
+    position: relative;
+    float: left;
+    width: 33.3%;
+}
+
+.model-box {
+    background-color: dimgray;
+    height: 25vh;
+    overflow: hidden;
+    border: solid black 3px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.model-header{
+    width: 100%;
+    height: 5vh;
+}
+
+.model-inside {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.model-description{
+    position: relative;
+    font-family: "Times New Roman", Arial, serif;
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.blue{
+    background-color: slateblue;
+}
+
+.green{
+    background-color: mediumseagreen;
+}
+
+.red{
+    background-color: tomato;
+}
+
+@media (min-width: 768px) AND (max-width: 991px) {
+
+    .model-col1, .model-col2{
+        width: 50%;
+        margin-bottom: 2vh;
+    }
+
+    .model-col1{
+        padding-right: 1vh;
+    }
+
+    .model-col2{
+        padding-left: 1vh;
+    }
+
+    .model-col3{
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .model-box {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .model-col1, .model-col2, .model-col3{
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .model-box {
+        width: 100%;
+    }
+
+}
